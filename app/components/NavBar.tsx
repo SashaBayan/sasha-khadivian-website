@@ -16,7 +16,7 @@ export function NavBar() {
         <span className="ml-5">Helvetica Lake</span>
       </div>
       {/* right section with anchor links */}
-      <div className="flex gap-10">
+      <div className="hidden gap-10 md:flex">
         <a>About</a>
         <a>Services</a>
         <a>Case Studies</a>
