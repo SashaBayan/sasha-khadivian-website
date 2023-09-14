@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function AboutSection() {
   return (
-    <section className="flex flex-wrap justify-around gap-20 bg-[#2B3851] px-10 py-20 lg:flex-nowrap lg:gap-32 ">
+    <section className="flex flex-wrap justify-between gap-20 bg-[#2B3851] px-16 py-20 lg:flex-nowrap lg:gap-32 ">
       {/* copy */}
       <div className="flex flex-col gap-5">
         <h3 className="font-primary text-lg font-bold uppercase tracking-widest text-white">
@@ -20,7 +20,7 @@ export function AboutSection() {
         </p>
       </div>
       {/* photo */}
-      <div className="flex w-[448px] flex-col items-center justify-center gap-5">
+      <div className="hidden w-[448px] flex-col items-center justify-center gap-5 lg:flex">
         <Image
           className="rounded-full"
           width={160}
