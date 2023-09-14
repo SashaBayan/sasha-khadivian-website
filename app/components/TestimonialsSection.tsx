@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export function TestimonialsSection() {
   return (
-    <section className="flex flex-col bg-[#2B3851] px-10 py-16 sm:px-20 lg:flex-nowrap lg:gap-10 lg:px-40">
-      <h3 className="font-primary text-lg font-bold uppercase tracking-widest text-white">
+    <section className="flex flex-col gap-10 bg-[#2B3851] px-16 py-16 lg:flex-nowrap ">
+      <h3 className="text-center font-primary text-lg font-bold uppercase tracking-widest text-white md:text-left">
         Testimonials
       </h3>
-      <div className="flex justify-between">
+      <div className="flex flex-wrap justify-center gap-5 md:justify-between">
         {testimonialsData.map((testimonial) => (
           <Testimonial
             key={testimonial.name}
@@ -35,8 +35,8 @@ interface ITestimonial {
 
 function Testimonial({ copy, name, photoSrc, logo }: ITestimonial) {
   return (
-    <div className="flex max-w-md flex-col gap-5">
-      <p className="font-secondary !leading-relaxed md:max-w-5xl">{copy}</p>
+    <div className="flex w-72 flex-col gap-5 text-sm ">
+      <p className="font-secondary !leading-relaxed ">{copy}</p>
       <div className="flex gap-5">
         <Image
           className="rounded-full"

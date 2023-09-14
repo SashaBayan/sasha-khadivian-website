@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function ServicesSection() {
   return (
-    <section className="flex flex-wrap-reverse justify-around gap-20 bg-[#E6ECF6] p-10 py-20 sm:px-20 lg:flex-nowrap lg:gap-40 lg:px-40 lg:pr-20">
+    <section className="flex flex-wrap-reverse justify-around gap-20 bg-[#E6ECF6] p-10 py-20 lg:flex-nowrap lg:gap-40">
       {/* logos */}
       <div className="flex flex-col items-center justify-center gap-5">
         <Image
