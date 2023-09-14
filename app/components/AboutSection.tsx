@@ -4,7 +4,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="flex flex-wrap justify-center gap-20 bg-[#2B3851] px-16 py-20 md:justify-between lg:flex-nowrap lg:gap-32 "
+      className="flex flex-wrap justify-center gap-20 bg-[#2B3851] px-10 py-20 md:justify-between md:px-16 lg:flex-nowrap lg:gap-32 "
     >
       {/* copy */}
       <div className="flex flex-col gap-5">
