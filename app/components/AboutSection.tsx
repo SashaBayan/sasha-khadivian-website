@@ -13,9 +13,9 @@ export function AboutSection() {
         </h3>
         <p className="max-w-md font-secondary !leading-relaxed md:max-w-lg">
           At Helvetica Lake, we believe in the power of innovation and efficient
-          software design. Founded by Sasha Khadivian, an engineer with years of
-          experience at renowned companies like Airbnb and Apple, our mission is
-          to help businesses unlock their full potential through tailored
+          software design. Founded by Sasha Khadivian, an engineer with over a
+          decade of experience at companies like Airbnb and Apple, our mission
+          is to help businesses unlock their full potential through tailored
           software solutions. With deep expertise in various languages and
           tools, and a passion for driving projects to completion, we are
           committed to ensuring your software needs are met with precision and

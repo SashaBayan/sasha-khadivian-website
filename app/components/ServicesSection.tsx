@@ -27,8 +27,8 @@ export function ServicesSection() {
           </p>
           <ul className="ml-10 list-disc">
             <li>
-              Web Development: With expertise in Nextjs, React, and Ruby on
-              Rails, we can build robust, user-friendly web applications.
+              Web Development: With expertise in Nextjs, React, and Nodejs, we
+              can build robust, user-friendly web applications.
             </li>
             <li>
               Database Management: Be it PostgreSQL or MongoDB, we've got your
@@ -36,9 +36,11 @@ export function ServicesSection() {
             </li>
             <li>
               DevOps: Seamless deployment and scalable solutions using platforms
-              like Amazon S3 and Google Cloud Run. Consultation: Leverage our
-              experience to drive your software projects forward, from planning
-              to execution.
+              like AWS, Vercel, and Google Cloud Run.
+            </li>
+            <li>
+              Consultation: Leverage our experience to drive your software
+              projects forward, from planning to execution.
             </li>
           </ul>
         </div>
