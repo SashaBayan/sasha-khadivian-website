@@ -11,7 +11,7 @@ export function AboutSection() {
         <h3 className="font-primary text-lg font-bold uppercase tracking-widest text-white">
           About
         </h3>
-        <p className="max-w-md font-secondary !leading-relaxed md:max-w-lg">
+        <p className="max-w-md font-secondary text-sm !leading-relaxed md:max-w-lg md:text-base">
           At Helvetica Lake, we believe in the power of innovation and efficient
           software design. Founded by Sasha Khadivian, an engineer with over a
           decade of experience at companies like Airbnb and Apple, our mission

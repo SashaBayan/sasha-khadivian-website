@@ -20,12 +20,12 @@ export function ServicesSection() {
         <h3 className="font-primary text-lg font-bold uppercase tracking-widest text-[#2B3851]">
           Services
         </h3>
-        <div className="max-w-md font-secondary !leading-relaxed text-[#2B3851]">
+        <div className="max-w-md font-secondary text-sm !leading-relaxed text-[#2B3851] md:text-base">
           <p>
             We offer a broad spectrum of software engineering services tailored
             to your needs. Our specialties include:
           </p>
-          <ul className="list-disc md:ml-10">
+          <ul className="list-disc pl-10">
             <li>
               Web Development: With expertise in Nextjs, React, and Nodejs, we
               can build robust, user-friendly web applications.
