@@ -17,9 +17,11 @@ export function ServicesSection() {
         <h3 className="font-primary text-lg font-bold uppercase tracking-widest text-[#2B3851]">
           Services
         </h3>
-        <p className="max-w-md font-secondary !leading-relaxed text-[#2B3851]">
-          We offer a broad spectrum of software engineering services tailored to
-          your needs. Our specialties include:
+        <div className="max-w-md font-secondary !leading-relaxed text-[#2B3851]">
+          <p>
+            We offer a broad spectrum of software engineering services tailored
+            to your needs. Our specialties include:
+          </p>
           <ul className="ml-10 list-disc">
             <li>
               Web Development: With expertise in Nextjs, React, and Ruby on
@@ -36,7 +38,7 @@ export function ServicesSection() {
               to execution.
             </li>
           </ul>
-        </p>
+        </div>
       </div>
     </section>
   );
