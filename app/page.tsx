@@ -2,19 +2,21 @@ import { IntroSection } from "./components/IntroSection";
 import { NavBar } from "./components/NavBar";
 import Image from "next/image";
 
+// next step: make About section responsive
+
 export default function Home() {
   return (
     <main className="bg-black text-white">
       <NavBar />
       <IntroSection />
 
-      <section className="flex justify-around bg-[#2B3851] px-56 py-20">
+      <section className="flex flex-wrap justify-around gap-12 bg-[#2B3851] px-20 py-20 lg:flex-nowrap lg:px-56">
         {/* copy */}
         <div className="flex flex-col gap-5">
-          <h3 className=" font-primary text-lg font-bold uppercase text-white">
+          <h3 className="font-primary text-lg font-bold uppercase tracking-widest text-white">
             About
           </h3>
-          <p className="max-w-md font-secondary">
+          <p className="max-w-lg font-secondary !leading-relaxed">
             At Helvetica Lake, we believe in the power of innovation and
             efficient software design. Founded by Sasha Khadivian, an engineer
             with years of experience at renowned companies like Airbnb and
