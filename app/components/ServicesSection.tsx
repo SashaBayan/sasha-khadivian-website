@@ -42,6 +42,11 @@ export function ServicesSection() {
             </li>
           </ul>
         </div>
+        <a href="#contact">
+          <button className="rounded border border-solid border-[#070C38] p-2 px-3.5 text-sm text-[#070C38] sm:text-base">
+            Get in Touch
+          </button>
+        </a>
       </div>
     </section>
   );

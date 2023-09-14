@@ -12,7 +12,7 @@ export function IntroSection() {
           development – we got you covered.
         </h3>
         {/* CTA */}
-        <a>
+        <a href="#services">
           <button className="rounded border border-solid border-white p-2 px-3.5 text-sm sm:text-base">
             Explore Our Services
           </button>
