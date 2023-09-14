@@ -27,7 +27,7 @@ export function ContactUsSection() {
             src="/mail-icon.svg"
             alt="email icon"
           />
-          <p>info@helveticalake.com</p>
+          <a href="mailto:info@helveticalake.com">info@helveticalake.com</a>
         </div>
         <div className="flex items-center justify-center gap-2">
           <Image
@@ -37,7 +37,7 @@ export function ContactUsSection() {
             src="/phone-icon.svg"
             alt="phone icon"
           />
-          <p>(650) 550-8584</p>
+          <a href="tel:+6505508584">(650) 550-8584</a>
         </div>
         <div className="flex items-center justify-center gap-2">
           <Image
@@ -47,7 +47,13 @@ export function ContactUsSection() {
             src="/linkedin-icon.svg"
             alt="linkedin icon"
           />
-          <p>/companies/helvetica-lake</p>
+          <a
+            href="https://www.linkedin.com/companies/helvetica-lake"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            /companies/helvetica-lake
+          </a>
         </div>
       </div>
     </section>
