@@ -4,7 +4,7 @@ export function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="flex flex-col justify-between gap-10 bg-[#2B3851] px-16 py-16 lg:flex-nowrap"
+      className="flex flex-col justify-between gap-10 bg-gradient-to-t from-[#2B3851] from-30% to-[#01041D] px-16 py-16 lg:flex-nowrap"
     >
       <h3 className="text-center font-primary text-lg font-bold uppercase tracking-widest text-white md:text-left">
         Testimonials
