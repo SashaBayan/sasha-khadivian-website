@@ -6,3 +6,7 @@
   --font-sans: var(--font-poppins);
   --font-serif: var(--font-lora);
 }
+
+html {
+  scroll-behavior: smooth;
+}
