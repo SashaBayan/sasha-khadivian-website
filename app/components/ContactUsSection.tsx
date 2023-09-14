@@ -12,9 +12,9 @@ export function ContactUsSection() {
           Contact Us
         </h3>
         <p className="max-w-lg font-secondary text-sm font-normal !leading-relaxed sm:text-base">
-          We're here to help you navigate your software journey. If you'd like a
-          consultation or have any questions, drop us an email and let’s build
-          something exceptional together.
+          We&apos;re here to help you navigate your software journey. If
+          you&apos;d like a consultation or have any questions, drop us an email
+          and let&apos;s build something exceptional together.
         </p>
       </div>
 

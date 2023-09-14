@@ -31,8 +31,8 @@ export function ServicesSection() {
               can build robust, user-friendly web applications.
             </li>
             <li>
-              Database Management: Be it PostgreSQL or MongoDB, we've got your
-              data needs covered.
+              Database Management: Be it PostgreSQL or MongoDB, we&apos;ve got
+              your data needs covered.
             </li>
             <li>
               DevOps: Seamless deployment and scalable solutions using platforms
