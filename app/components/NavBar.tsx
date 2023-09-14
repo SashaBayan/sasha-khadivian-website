@@ -6,7 +6,7 @@ export function NavBar() {
       {/* left section w logo and company name */}
       <div className="inline">
         <Image
-          className="-mb-5 inline"
+          className="-mb-5 inline transform transition-all duration-1000 ease-in-out hover:rotate-180"
           src="/hl-logo.svg"
           alt="Helvetica Lake Logo"
           width={27}
