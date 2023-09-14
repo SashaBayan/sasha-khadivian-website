@@ -38,7 +38,7 @@ interface ITestimonial {
 
 function Testimonial({ copy, name, photoSrc, logo }: ITestimonial) {
   return (
-    <div className="flex flex-col gap-12 text-sm md:w-72 ">
+    <div className="flex flex-col gap-6 text-sm md:w-72 md:gap-8">
       <p className="font-secondary !leading-relaxed ">{copy}</p>
       <div className="flex gap-5">
         <Image
