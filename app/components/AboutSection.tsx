@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export function AboutSection() {
   return (
-    <section className="flex flex-wrap justify-center gap-20 bg-[#2B3851] px-16 py-20 md:justify-between lg:flex-nowrap lg:gap-32 ">
+    <section
+      id="about"
+      className="flex flex-wrap justify-center gap-20 bg-[#2B3851] px-16 py-20 md:justify-between lg:flex-nowrap lg:gap-32 "
+    >
       {/* copy */}
       <div className="flex flex-col gap-5">
         <h3 className="font-primary text-lg font-bold uppercase tracking-widest text-white">

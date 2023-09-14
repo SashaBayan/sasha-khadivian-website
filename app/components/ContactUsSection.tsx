@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export function ContactUsSection() {
   return (
-    <section className="flex flex-col items-center justify-center gap-10 px-10 py-20 text-center lg:flex-nowrap">
+    <section
+      id="contact"
+      className="flex flex-col items-center justify-center gap-10 px-10 py-20 text-center lg:flex-nowrap"
+    >
       {/* copy */}
       <div className="flex flex-col gap-5">
         <h3 className="font-primary text-2xl font-bold !leading-normal sm:text-3xl md:text-4xl">

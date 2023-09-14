@@ -17,11 +17,19 @@ export function NavBar() {
       </div>
       {/* right section with anchor links */}
       <div className="hidden gap-10 md:flex">
-        <a>About</a>
-        <a>Services</a>
-        <a>Case Studies</a>
-        <a>Testimonials</a>
-        <a>Contact</a>
+        <a href="#about" className="cursor-pointer">
+          About
+        </a>
+        <a href="#services" className="cursor-pointer">
+          Services
+        </a>
+        {/* <a href="#clients" className="cursor-pointer">Case Studies</a> */}
+        <a href="#testimonials" className="cursor-pointer">
+          Testimonials
+        </a>
+        <a href="#contact" className="cursor-pointer">
+          Contact
+        </a>
       </div>
     </div>
   );

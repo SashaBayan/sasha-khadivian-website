@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export function TestimonialsSection() {
   return (
-    <section className="flex flex-col justify-between gap-10 bg-[#2B3851] px-16 py-16 lg:flex-nowrap">
+    <section
+      id="testimonials"
+      className="flex flex-col justify-between gap-10 bg-[#2B3851] px-16 py-16 lg:flex-nowrap"
+    >
       <h3 className="text-center font-primary text-lg font-bold uppercase tracking-widest text-white md:text-left">
         Testimonials
       </h3>
