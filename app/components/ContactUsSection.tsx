@@ -19,7 +19,7 @@ export function ContactUsSection() {
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-2 hover:animate-pulse">
           <Image
             className="-mb-0.5"
             width={20}
@@ -29,7 +29,7 @@ export function ContactUsSection() {
           />
           <a href="mailto:info@helveticalake.com">info@helveticalake.com</a>
         </div>
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-2 hover:animate-pulse">
           <Image
             className="-mb-0.5"
             width={20}
@@ -39,7 +39,7 @@ export function ContactUsSection() {
           />
           <a href="tel:+6505508584">(650) 550-8584</a>
         </div>
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-2 hover:animate-pulse">
           <Image
             className="-mt-1"
             width={34}

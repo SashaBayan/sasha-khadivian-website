@@ -13,7 +13,7 @@ export function IntroSection() {
         </h3>
         {/* CTA */}
         <a href="#services">
-          <button className="rounded border border-solid border-white p-2 px-3.5 text-sm sm:text-base">
+          <button className="rounded border border-solid border-white p-2 px-3.5 text-sm hover:animate-pulse sm:text-base">
             Explore Our Services
           </button>
         </a>

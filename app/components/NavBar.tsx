@@ -6,28 +6,31 @@ export function NavBar() {
       {/* left section w logo and company name */}
       <div className="inline">
         <Image
-          className="-mb-5 inline transform transition-all duration-1000 ease-in-out hover:rotate-180"
+          className="-mb-5 inline transform transition-all duration-1000 ease-in-out hover:rotate-180 hover:animate-pulse"
           src="/hl-logo.svg"
           alt="Helvetica Lake Logo"
           width={27}
           height={40}
           priority
         />
-        <span className="ml-5">Helvetica Lake</span>
+        <a href="/" className="ml-5 cursor-pointer hover:animate-pulse">
+          Helvetica Lake
+        </a>
       </div>
       {/* right section with anchor links */}
       <div className="hidden gap-10 md:flex">
-        <a href="#about" className="cursor-pointer">
-          About
-        </a>
-        <a href="#services" className="cursor-pointer">
+        <div className="hover:animate-pulse">
+          <a href="#about" className="cursor-pointer ">
+            About
+          </a>
+        </div>
+        <a href="#services" className="cursor-pointer hover:animate-pulse">
           Services
         </a>
-        {/* <a href="#clients" className="cursor-pointer">Case Studies</a> */}
-        <a href="#testimonials" className="cursor-pointer">
+        <a href="#testimonials" className="cursor-pointer hover:animate-pulse">
           Testimonials
         </a>
-        <a href="#contact" className="cursor-pointer">
+        <a href="#contact" className="cursor-pointer hover:animate-pulse">
           Contact
         </a>
       </div>

@@ -45,7 +45,7 @@ export function ServicesSection() {
           </ul>
         </div>
         <a href="#contact">
-          <button className="rounded border border-solid border-[#070C38] p-2 px-3.5 text-sm text-[#070C38] sm:text-base">
+          <button className="rounded border border-solid border-[#070C38] p-2 px-3.5 text-sm text-[#070C38] hover:animate-pulse sm:text-base">
             Get in Touch
           </button>
         </a>
