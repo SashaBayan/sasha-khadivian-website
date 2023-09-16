@@ -3,7 +3,7 @@ import { ClientsSection } from "./components/ClientsSection";
 import { ContactUsSection } from "./components/ContactUsSection";
 import { IntroSection } from "./components/IntroSection";
 import { NavBar } from "./components/NavBar";
-import { ServicesSection } from "./components/ServicesSection";
+import { SkillsSection } from "./components/SkillsSection";
 import { TestimonialsSection } from "./components/TestimonialsSection";
 
 export default function Home() {

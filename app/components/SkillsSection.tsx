@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function ServicesSection() {
+export function SkillsSection() {
   return (
     <section
       id="services"
