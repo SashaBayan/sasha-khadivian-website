@@ -1,5 +1,4 @@
 import { AboutSection } from "./components/AboutSection";
-import { ClientsSection } from "./components/ClientsSection";
 import { ContactUsSection } from "./components/ContactUsSection";
 import { IntroSection } from "./components/IntroSection";
 import { NavBar } from "./components/NavBar";
