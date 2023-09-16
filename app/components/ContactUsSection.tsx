@@ -18,7 +18,10 @@ export function ContactUsSection() {
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className="flex items-center justify-center gap-2 hover:animate-pulse">
+        <a
+          href="mailto:sasha@helveticalake.com"
+          className="flex items-center justify-center gap-2 hover:animate-pulse"
+        >
           <Image
             className="-mb-0.5"
             width={24}
@@ -26,25 +29,29 @@ export function ContactUsSection() {
             src="/mail-icon.svg"
             alt="email icon"
           />
-          <a href="mailto:sasha@helveticalake.com">sasha@helveticalake.com</a>
-        </div>
-        <div className="flex items-center justify-center gap-2 hover:animate-pulse">
+          <p>sasha@helveticalake.com</p>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/sashakhadivian/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 hover:animate-pulse"
+        >
           <Image
-            className="-mt-1"
+            className="-mt-2"
             width={24}
             height={24}
             src="/linkedin-icon.svg"
             alt="linkedin icon"
           />
-          <a
-            href="https://www.linkedin.com/in/sashakhadivian/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            /companies/helvetica-lake
-          </a>
-        </div>
-        <div className="flex items-center justify-center gap-2 hover:animate-pulse">
+          <p>/in/sashakhadivian</p>
+        </a>
+        <a
+          href="https://calendly.com/sashakhadivian/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 hover:animate-pulse"
+        >
           <Image
             className="-mt-1"
             width={24}
@@ -52,14 +59,8 @@ export function ContactUsSection() {
             src="/calendar-icon.svg"
             alt="calendar icon"
           />
-          <a
-            href="https://calendly.com/sashakhadivian/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Schedule a 30 min consultation
-          </a>
-        </div>
+          <p>Schedule a 30 min consultation</p>
+        </a>
       </div>
     </section>
   );
