@@ -55,6 +55,21 @@ export function ContactUsSection() {
             /companies/helvetica-lake
           </a>
         </div>
+        <div className="flex items-center justify-center gap-2 hover:animate-pulse">
+          <Image
+            width={24}
+            height={24}
+            src="/calendar-icon.svg"
+            alt="calendar icon"
+          />
+          <a
+            href="https://calendly.com/sashakhadivian/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule a 30 min consultation
+          </a>
+        </div>
       </div>
     </section>
   );
