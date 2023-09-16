@@ -2,19 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins, Lora } from "next/font/google";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "600"],
-  variable: "--font-poppins",
-});
-
-const lora = Lora({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-lora",
-});
-
 export const metadata: Metadata = {
   title: "Sasha Khadivian",
   description:
@@ -27,12 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      // .variable allow us to use variable classNames
-      // lora.classname applies the font globally
-      className={`${poppins.variable} ${lora.variable} ${lora.className}`}
-      lang="en"
-    >
+    <html lang="en">
       <body>{children}</body>
     </html>
   );
