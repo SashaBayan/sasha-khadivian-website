@@ -6,50 +6,75 @@ export function SkillsSection() {
       id="services"
       className="flex flex-wrap-reverse justify-around gap-20 bg-[#E6ECF6] p-10 py-20 lg:flex-nowrap lg:gap-40"
     >
-      {/* logos */}
-      <div className="flex flex-col items-center justify-center gap-5">
-        <Image
-          width={432}
-          height={328}
-          src="/technologies-logos.png"
-          alt="technologies used logos"
-        />
-      </div>
-      {/* copy */}
-      <div className="flex flex-col gap-5">
-        <h3 className="font-primary text-lg font-bold uppercase tracking-widest text-[#2B3851]">
-          Services
+      <div className="flex flex-col gap-12">
+        <h3 className="text-center font-primary text-lg font-bold uppercase tracking-widest text-[#21313C]">
+          Skills
         </h3>
-        <div className="max-w-md font-secondary text-sm !leading-relaxed text-[#2B3851] md:text-base">
-          <p>
-            We offer a broad spectrum of software engineering services tailored
-            to your needs. Our specialties include:
-          </p>
-          <ul className="list-disc pl-10">
-            <li>
-              Web Development: With expertise in Nextjs, React, and Nodejs, we
-              can build robust, user-friendly web applications.
-            </li>
-            <li>
-              Database Management: Be it PostgreSQL or MongoDB, we&apos;ve got
-              your data needs covered.
-            </li>
-            <li>
-              DevOps: Seamless deployment and scalable solutions using platforms
-              like AWS, Vercel, and Google Cloud Run.
-            </li>
-            <li>
-              Consultation: Leverage our experience to drive your software
-              projects forward, from planning to execution.
-            </li>
-          </ul>
+        <div className="flex w-full flex-wrap justify-center gap-6 font-secondary text-sm text-[#2B3851] md:justify-normal md:gap-20 md:text-base">
+          <div className="flex max-w-[350px] flex-col gap-6">
+            {SkillData.slice(0, 4).map((skill) => (
+              <Skill
+                key={skill.section}
+                section={skill.section}
+                skills={skill.skills}
+              />
+            ))}
+          </div>
+          <div className="col-2 flex max-w-[350px] flex-col justify-around gap-6">
+            {SkillData.slice(4).map((skill) => (
+              <Skill
+                key={skill.section}
+                section={skill.section}
+                skills={skill.skills}
+              />
+            ))}
+          </div>
         </div>
-        <a href="#contact">
-          <button className="rounded border border-solid border-[#070C38] p-2 px-3.5 text-sm text-[#070C38] hover:animate-pulse sm:text-base">
-            Get in Touch
-          </button>
-        </a>
       </div>
     </section>
+  );
+}
+
+interface SkillEntry {
+  section: string;
+  skills: string;
+}
+
+const SkillData: SkillEntry[] = [
+  {
+    section: "Languages",
+    skills: "Bash, HTML, CSS, Javascript, Ruby, Typescript",
+  },
+  {
+    section: "Frameworks",
+    skills: "Nextjs, Nodejs, React, Ruby on Rails",
+  },
+  { section: "Databases", skills: "MongoDB, MySQL, PostgreSQL" },
+  {
+    section: "Platforms",
+    skills:
+      "AWS, Asana, BitBucket, Confluence, Contentful, GitHub, GitLab, Heroku, Jira, Mailchip, SendGrid, Slack, Stripe, Teams, Trello, Vercel",
+  },
+  {
+    section: "Tools",
+    skills:
+      "Bootstrap, Cypress, Docker, ESLint, Express, Git, GraphQL, Jest, Less, Material UI, Mobx, OAuth, Puppeteer, React Router, Redux, Sass, Storybook, TalkwindCSS, TSLint, Webpack",
+  },
+  {
+    section: "Devops",
+    skills: "Amazon S3, AWS Lambda, Google Cloud Run",
+  },
+  {
+    section: "Spoken languages",
+    skills: "English, French, Persian, Portuguese, Spanish",
+  },
+];
+
+function Skill({ section, skills }: SkillEntry) {
+  return (
+    <div className="flex flex-col gap-1">
+      <h4 className="text-xs uppercase">{section}</h4>
+      <p className="font-secondary text-sm md:text-base">{skills}</p>
+    </div>
   );
 }
