@@ -6,7 +6,7 @@ export function TestimonialsSection() {
       id="testimonials"
       className="flex flex-col justify-between gap-10 bg-gradient-to-b from-[#2B5148] from-30% to-[#739C95] px-20 py-16 lg:flex-nowrap"
     >
-      <h3 className="text-center font-primary text-lg font-bold uppercase tracking-widest text-white lg:text-left">
+      <h3 className="font-primary text-center text-lg font-bold uppercase tracking-widest text-white lg:text-left">
         Reviews
       </h3>
       <div className="flex flex-wrap justify-center gap-16 lg:justify-between">
@@ -33,7 +33,7 @@ interface ITestimonial {
 
 function Testimonial({ copy, name, photoSrc, role }: ITestimonial) {
   return (
-    <div className="flex max-w-[350px] flex-col gap-5 text-sm md:gap-8">
+    <div className="flex max-w-[350px] flex-col gap-5 text-base md:gap-8">
       <p className="font-secondary">{copy}</p>
       <div className="flex items-center gap-5">
         <Image
