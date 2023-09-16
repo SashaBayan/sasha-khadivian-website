@@ -9,12 +9,11 @@ export function ContactUsSection() {
       {/* copy */}
       <div className="flex flex-col gap-5">
         <h3 className="font-primary text-2xl font-bold !leading-normal sm:text-3xl md:text-4xl">
-          Contact Us
+          Reach Out
         </h3>
         <p className="max-w-lg font-secondary text-sm font-normal !leading-relaxed sm:text-base">
-          We&apos;re here to help you navigate your software journey. If
-          you&apos;d like a consultation or have any questions, drop us an email
-          and let&apos;s build something exceptional together.
+          If you&apos;d like a consultation or have any questions, drop me an
+          email. Let&apos;s build something exceptional together.
         </p>
       </div>
 
@@ -27,17 +26,7 @@ export function ContactUsSection() {
             src="/mail-icon.svg"
             alt="email icon"
           />
-          <a href="mailto:info@helveticalake.com">info@helveticalake.com</a>
-        </div>
-        <div className="flex items-center justify-center gap-2 hover:animate-pulse">
-          <Image
-            className="-mb-0.5"
-            width={20}
-            height={20}
-            src="/phone-icon.svg"
-            alt="phone icon"
-          />
-          <a href="tel:+6505508584">(650) 550-8584</a>
+          <a href="mailto:sasha@helveticalake.com">sasha@helveticalake.com</a>
         </div>
         <div className="flex items-center justify-center gap-2 hover:animate-pulse">
           <Image
@@ -48,7 +37,7 @@ export function ContactUsSection() {
             alt="linkedin icon"
           />
           <a
-            href="https://www.linkedin.com/companies/helvetica-lake"
+            href="https://www.linkedin.com/in/sashakhadivian/"
             target="_blank"
             rel="noopener noreferrer"
           >
