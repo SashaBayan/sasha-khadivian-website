@@ -8,7 +8,7 @@ import { TestimonialsSection } from "./components/TestimonialsSection";
 
 export default function Home() {
   return (
-    <main className="bg-[#01041D] text-white">
+    <main className="bg-[#739C95] text-white">
       <NavBar />
       <IntroSection />
       <AboutSection />
