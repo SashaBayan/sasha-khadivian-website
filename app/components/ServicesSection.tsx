@@ -11,7 +11,7 @@ export function ServicesSection() {
         <Image
           width={432}
           height={328}
-          src="/logos.png"
+          src="/technologies-logos.png"
           alt="technologies used logos"
         />
       </div>
