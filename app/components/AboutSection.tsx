@@ -29,8 +29,8 @@ export function AboutSection() {
         to reach out. Let's create something amazing together!
       </p>
       <Image
-        width={48}
-        height={48}
+        width={60}
+        height={60}
         src="/sasha-teardrop.png"
         alt="sasha photo"
       />
