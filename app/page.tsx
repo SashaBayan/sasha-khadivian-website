@@ -12,8 +12,7 @@ export default function Home() {
       <NavBar />
       <IntroSection />
       <AboutSection />
-      <ServicesSection />
-      <ClientsSection />
+      {/* <ServicesSection /> */}
       <TestimonialsSection />
       <ContactUsSection />
     </main>

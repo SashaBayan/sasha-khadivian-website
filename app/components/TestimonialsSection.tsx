@@ -4,19 +4,19 @@ export function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="flex flex-col justify-between gap-10 bg-gradient-to-t from-[#2B3851] from-30% to-[#01041D] px-16 py-16 lg:flex-nowrap"
+      className="flex flex-col justify-between gap-10 bg-gradient-to-b from-[#2B5148] from-30% to-[#739C95] px-20 py-16 lg:flex-nowrap"
     >
-      <h3 className="text-center font-primary text-lg font-bold uppercase tracking-widest text-white md:text-left">
-        Testimonials
+      <h3 className="text-center font-primary text-lg font-bold uppercase tracking-widest text-white lg:text-left">
+        Reviews
       </h3>
-      <div className="flex flex-wrap justify-center gap-5 md:justify-between">
+      <div className="flex flex-wrap justify-center gap-16 lg:justify-between">
         {testimonialsData.map((testimonial) => (
           <Testimonial
             key={testimonial.name}
             copy={testimonial.copy}
             name={testimonial.name}
             photoSrc={testimonial.photoSrc}
-            logo={testimonial.logo}
+            role={testimonial.role}
           />
         ))}
       </div>
@@ -28,19 +28,14 @@ interface ITestimonial {
   copy: string;
   name: string;
   photoSrc: string;
-  logo: {
-    src: string;
-    width: number;
-    height: number;
-    alt: string;
-  };
+  role: string;
 }
 
-function Testimonial({ copy, name, photoSrc, logo }: ITestimonial) {
+function Testimonial({ copy, name, photoSrc, role }: ITestimonial) {
   return (
-    <div className="flex flex-col gap-6 text-sm md:w-72 md:gap-8">
-      <p className="font-secondary !leading-relaxed ">{copy}</p>
-      <div className="flex gap-5">
+    <div className="flex max-w-[350px] flex-col gap-5 text-sm md:gap-8">
+      <p className="font-secondary">{copy}</p>
+      <div className="flex items-center gap-5">
         <Image
           className="rounded-full"
           width={70}
@@ -48,14 +43,9 @@ function Testimonial({ copy, name, photoSrc, logo }: ITestimonial) {
           src={photoSrc}
           alt="testimonial photo"
         />
-        <div className="flex flex-col gap-2 text-center text-sm">
+        <div className="flex flex-col gap-1 text-sm">
           <p> {name} </p>
-          <Image
-            src={logo.src}
-            width={logo.width}
-            height={logo.height}
-            alt={logo.alt}
-          />
+          <p> {role} </p>
         </div>
       </div>
     </div>
@@ -64,36 +54,21 @@ function Testimonial({ copy, name, photoSrc, logo }: ITestimonial) {
 
 const testimonialsData: ITestimonial[] = [
   {
-    copy: "Sasha is a brilliant and incredibly talented engineer. He leveled up our whole team while we worked together. I love his thoughtful, incisive code reviews, his tidy, well-tested code, and the way he is able to break down large problems into small, manageable pieces. Sasha is really a joy to work with - I learned so much from working together! I would love to be on the same team again.",
-    name: "Abby Howell",
-    photoSrc: "/abby.png",
-    logo: {
-      src: "/reforge-logo.png",
-      width: 50,
-      height: 16,
-      alt: "reforge logo",
-    },
+    copy: "“As a colleague, what I really enjoy about working with Sasha is his attention to detail, his approachable demeanor, and his willingness to roll up his sleeves for any issue. He always made sure to clarify any open questions he had about a ticket, and he would often suggest even better ways of approaching an issue that I had not thought of. In addition to being great to work with, Sasha brings his warm personality and sense of humor to every interaction with the team...”",
+    name: "Tess Peppers",
+    photoSrc: "/tess.png",
+    role: "Sr. Prod Manager, Reforge",
   },
   {
-    copy: "Sasha is a thoughtful and effective software engineer and architect. Just as importantly, he's a pleasure to work with and ramps up on projects quickly. Sasha has not only worked on many complex tech stacks, but he has experience with a wide range of teams. So he knows the right way to build and the right way to steer coworkers toward good solutions. I'd be happy for us to have Sasha working with us on more projects soon.",
-    name: "Matt Conrad",
-    photoSrc: "/matt.png",
-    logo: {
-      src: "/reforge-logo.png",
-      width: 50,
-      height: 16,
-      alt: "reforge logo",
-    },
+    copy: "“Sasha was one of the two frontend developers working on the UI for the ML product my team built at Apple. He was extremely friendly, had a strong desire to learn and took his work seriously. It was a pleasure working with Sasha and I hope we get to work together in the future again.”",
+    name: "Roja Bandari",
+    photoSrc: "/roja.png",
+    role: "Head of Risk Intelligence, Stripe",
   },
   {
-    copy: "Sasha has some of the best problem solving skills I've ever seen. The project we worked on together required a constant state of change and Sasha was up for the challenge. His attitude never wavered and he delivered on a high quality product that solved a big problem for our company.",
+    copy: "“Sasha has some of the best problem solving skills I've ever seen. The project we worked on together required a constant state of change and Sasha was up for the challenge. His attitude never wavered and he delivered on a high quality product that solved a big problem for our company.”",
     name: "Cameron Resnick",
     photoSrc: "/cameron.png",
-    logo: {
-      src: "/flyflat-logo.png",
-      width: 35,
-      height: 24,
-      alt: "flyflat logo",
-    },
+    role: "Chief Operating Officer, FlyFlat",
   },
 ];
