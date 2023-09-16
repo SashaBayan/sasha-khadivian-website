@@ -16,9 +16,9 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Helvetica Lake",
+  title: "Sasha Khadivian",
   description:
-    "Helvetica Lake is a software consulting firm specializing in innovative solutions for your digital product needs.",
+    "Sasha Khadivian is a full-stack software engineer with experience in the travel, hospitality and health industries.",
 };
 
 export default function RootLayout({
