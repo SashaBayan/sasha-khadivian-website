@@ -7,10 +7,10 @@ export function SkillsSection() {
       className="flex flex-wrap-reverse justify-around gap-20 bg-[#E6ECF6] p-10 py-20 lg:flex-nowrap lg:gap-40"
     >
       <div className="flex flex-col gap-12">
-        <h3 className="text-center font-primary text-lg font-bold uppercase tracking-widest text-[#21313C]">
+        <h3 className="font-primary text-center text-lg font-bold uppercase tracking-widest text-[#21313C]">
           Skills
         </h3>
-        <div className="flex w-full flex-wrap justify-center gap-6 font-secondary text-sm text-[#2B3851] md:justify-normal md:gap-20 md:text-base">
+        <div className="font-secondary flex w-full flex-wrap justify-center gap-6 text-sm text-[#2B3851] md:justify-normal md:gap-20 md:text-base">
           <div className="flex max-w-[350px] flex-col gap-6">
             {SkillData.slice(0, 4).map((skill) => (
               <Skill
@@ -47,7 +47,7 @@ const SkillData: SkillEntry[] = [
   },
   {
     section: "Frameworks",
-    skills: "Nextjs, Nodejs, React, Ruby on Rails",
+    skills: "Nestjs, Nextjs, Nodejs, React, Ruby on Rails",
   },
   { section: "Databases", skills: "MongoDB, MySQL, PostgreSQL" },
   {
@@ -62,7 +62,7 @@ const SkillData: SkillEntry[] = [
   },
   {
     section: "Devops",
-    skills: "Amazon S3, AWS Lambda, Google Cloud Run",
+    skills: "Amazon S3, AWS Lambda, Cloudflare, Cloudfront, Google Cloud Run",
   },
   {
     section: "Spoken languages",
